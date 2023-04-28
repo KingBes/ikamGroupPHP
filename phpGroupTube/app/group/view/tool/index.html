@@ -1,0 +1,91 @@
+{include file="public/header"}
+<div class="card-panel teal lighten-2">{$group.nickname}</div>
+<form action="" id="commentForm" method="post">
+    <!-- <ul class="collapsible"> -->
+    {foreach $data as $k=>$v}
+    {if !isset($v["deploy"]) || $v["deploy"]!=0}
+    <div class="card">
+        <span class="card-title">{:unicodeDecode($v["icon"])}{$v.title}</span>
+        <div class="card-content">
+            <div class="row">
+                <div class="row">
+                    <div class="col s6">
+                        <label>
+                            <input name="{$v.className}__switch" type="radio" {$v.switch=='1' ?'checked':''}
+                                value="1" />
+                            <span>开启</span>
+                        </label>
+                    </div>
+                    <div class="col s6">
+                        <label>
+                            <input name="{$v.className}__switch" type="radio" {$v.switch=='0' ?'checked':''}
+                                value="0" />
+                            <span>关闭</span>
+                        </label>
+                    </div>
+                </div>
+
+                {foreach $v["config"] as $k1=>$v1}
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="{$k1}" type="number" required title="{$v1.msg}" name="{$k1}" value="{$v1.val}">
+                        <label for="{$k1}">{$v1.name}</label>
+                    </div>
+                </div>
+                {/foreach}
+            </div>
+        </div>
+    </div>
+    {/if}
+    {/foreach}
+    <button class="waves-effect waves-light btn" type="submit">提交</button>
+</form>
+
+<script>
+    $(document).ready(function () {
+        $('.collapsible').collapsible();
+    });
+
+    `{foreach $data as $k=>$v}{if !isset($v["deploy"]) || $v["deploy"]!=0}{foreach $v["config"] as $k1=>$v1}`
+
+    $.validator.addMethod("{$k1}", function (value, element, params) {
+        var text = {$v1.ver};
+        // console.log(this.optional(element),(text.test(value)))
+        if(this.optional(element) || (text.test(value))){
+            return true;
+        }else{
+            return false;
+        }
+    }, "");
+
+    `{/foreach}{/if}{/foreach}`
+
+    $("#commentForm").validate({
+        rules: {
+            {foreach $data as $k=>$v}{if !isset($v["deploy"]) || $v["deploy"]!=0}{foreach $v["config"] as $k1=>$v1}
+            {$k1}: {
+                {$k1}: true
+            },
+            {/foreach}{/if}{/foreach}
+        },
+        //提交表单后，（第一个）未通过验证的表单获得焦点
+        focusInvalid: true,
+        //当未通过验证的元素获得焦点时，移除错误提示
+        // focusCleanup: true,
+
+        errorElement: 'div',
+        errorPlacement: function (error, element) {
+            console.log(error, element);
+            var placement = $(element).data('error');
+            if (placement) {
+                $(placement).append(error)
+            } else {
+                error.insertAfter(element);
+            }
+        }
+    });
+
+
+
+</script>
+{include file="public/footer"}

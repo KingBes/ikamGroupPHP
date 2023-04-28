@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="__admin__/css/materialize.css">
+    <link rel="stylesheet" href="__admin__/icon/icon.css">
+    <script src="__admin__/js/jquery3.5.1.js"></script>
+    <script type="text/javascript" src="__admin__/js/materialize.js"></script>
+    <script type="text/javascript" src="__admin__/js/jquery_time.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/admin" class="brand-logo">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="">关键词回复</a></li>
+                <li><a href="">api配置</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="">关键词回复</a></li>
+        <li><a href="">api配置</a></li>
+    </ul>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>

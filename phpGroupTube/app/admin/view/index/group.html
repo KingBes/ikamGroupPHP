@@ -1,0 +1,118 @@
+{include file="public/header"}
+<div class="card-panel teal lighten-2">
+    <a class="waves-effect waves-light btn" href="javascript:history.back();"><i
+            class="material-icons left">keyboard_return</i>返回</a><a class="waves-effect waves-light btn"
+        href="javascript:;" onclick="updateGroup()"><i class="material-icons left">autorenew</i>刷新列表</a>
+</div>
+<table class="responsive-table">
+    <thead>
+        <tr>
+            <th data-field="group_wxid">wxid</th>
+            <th data-field="nickname">群名</th>
+            <th data-field="headimgurl">头像</th>
+            <th data-field="member_count">人数</th>
+            <th data-field="state">开关</th>
+            <th data-field="out_time">到期时间</th>
+            <th data-field="pwd">群密码</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {foreach $data as $k=>$v }
+        <tr>
+            <td>{$v.group_wxid}</td>
+            <td>{$v.nickname}</td>
+            <td><img class="materialboxed" src="{$v.headimgurl}" width="25px" height="25px"></td>
+            <td>
+                {$v.member_count}
+            </td>
+            <td>
+                <label>
+                    <input onclick="edit({id:'{$v.id}',state:'1'})" name="{$v.group_wxid}" type="radio"
+                        {$v.state==1?"checked":""} value="1" />
+                    <span>开</span>
+                </label>
+                <label>
+                    <input onclick="edit({id:'{$v.id}',state:'0'})" name="{$v.group_wxid}" type="radio"
+                        {$v.state==0?"checked":""} value="0" />
+                    <span>关</span>
+                </label>
+            </td>
+            <td> <input type="text" id="id_{$v.id}" class="validate" value="{$v.out_time|date='Y-m-d H:i:s'}"></td>
+            <td> <input type="password" class="validate" value="" onblur="edit({id:'{$v.id}',pwd:value})"></td>
+        </tr>
+        {/foreach}
+    </tbody>
+</table>
+{$data|raw}
+<script>
+    $(document).ready(function () {
+        $('.materialboxed').materialbox();
+    });
+
+    function edit(obj) {
+        $.post("", obj, function (res) {
+            M.toast({
+                html: res.msg,
+                displayLength: 2000
+            })
+        })
+    }
+
+    window.onload = function () {
+        `{foreach $data as $k=>$v}`
+        new Jdate({
+            el: "#id_{$v.id}",
+            format: "YYYY-MM-DD hh:mm:ss",
+            beginYear: 2000,
+            endYear: 2100,
+            confirm: function (date) {
+                let id = "{$v.id}"
+                console.log(date, id)
+                edit({
+                    "id": id,
+                    "out_time": date
+                })
+            },
+        });
+        `{/foreach}`
+    }
+
+    function state(wxid) {
+        let val = $(`input[name='${wxid}']:checked`).val()
+        $.post("", {
+            "friend_wxid": wxid,
+            "state": val
+        }, function (res) {
+            // Materialize.toast(res.msg,2000)
+            console.log(res)
+            M.toast({
+                html: res.msg,
+                displayLength: 2000
+            })
+        })
+
+    }
+
+    //更新好友
+    function updateGroup() {
+        let rob_wxid = "{$rob_wxid}";
+        $.post("{:route('admin.index.updateGroup')}", { rob_wxid: rob_wxid }, function (res) {
+            if (res.code == 1) {
+                M.toast({
+                    html: res.msg,
+                    completeCallback: function () {
+                        window.location.reload()
+                    },
+                    displayLength: 2000
+                })
+            } else {
+                M.toast({
+                    html: res.msg,
+                    displayLength: 2000
+                })
+            }
+        })
+    }
+</script>
+{include file="public/footer"}

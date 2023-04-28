@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="__admin__/icon/icon.css">
+    <script src="__admin__/js/jquery3.5.1.js"></script>
+    <script type="text/javascript" src="__admin__/js/jquery_time.js"></script>
+    <link rel="stylesheet" href="__admin__/css/nouislider.css">
+    <script src="__admin__/js/nouislider.js"></script>
+    <script src="__admin__/js/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="__admin__/css/materialize.css">
+    <style>
+        .input-field .error {
+            color: #F44336 !important;
+            /* font-size: 12px !important; */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/group/index/{$group.id}" class="brand-logo">
+                <img src="{$group.headimgurl}" alt="" width="50">
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="">登录</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="">登录</a></li>
+    </ul>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>

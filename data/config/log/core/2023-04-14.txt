@@ -1,0 +1,18 @@
+2023-04-14 11:14:56.972 信息:初始化 Initializing Complete
+2023-04-14 11:14:57.019 信息:初始化 Load Config Complete, debug at 
+2023-04-14 11:14:57.019 信息:初始化 Version Verification, Start
+2023-04-14 11:14:58.598 信息:初始化 Version Verification, Complate has jpg: SyB842jw==
+2023-04-14 11:14:58.598 信息:初始化 Version Verification, jpg length: 5100
+2023-04-14 11:14:58.740 信息:初始化 Version Verification, Up Static files at 1595146037
+2023-04-14 11:14:58.740 信息:初始化 Version Verification, is Complete
+2023-04-14 11:14:58.740 信息:初始化 have full
+2023-04-14 11:14:58.740 信息:初始化 Open v candy
+2023-04-14 11:14:58.755 信息:初始化 Open v candy 01
+2023-04-14 11:14:58.755 信息:初始化 Open v candy 02
+2023-04-14 11:14:59.208 信息:初始化 Open v candy, sta：1
+2023-04-14 11:14:59.208 信息:初始化 Open v candy, Comlpete
+2023-04-14 11:14:59.208 信息:初始化 Create Log, Start
+2023-04-14 11:14:59.240 信息:初始化 Create Log, Init Queue and Config
+2023-04-14 11:14:59.428 信息:初始化 Create Log Panel Complete, c at 207128327
+2023-04-14 11:14:59.756 信息:初始化 have full
+2023-04-14 11:14:59.756 信息:初始化 Create Windows, Start

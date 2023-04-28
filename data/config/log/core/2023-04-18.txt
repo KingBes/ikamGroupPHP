@@ -1,0 +1,36 @@
+2023-04-18 10:24:27.255 信息:初始化 Initializing Complete
+2023-04-18 10:24:27.364 信息:初始化 Load Config Complete, debug at 
+2023-04-18 10:24:27.364 信息:初始化 Version Verification, Start
+2023-04-18 10:24:29.633 信息:初始化 Version Verification, Complate has jpg: SyB842jw==
+2023-04-18 10:24:29.648 信息:初始化 Version Verification, jpg length: 5100
+2023-04-18 10:24:29.992 信息:初始化 Version Verification, Up Static files at 1595146037
+2023-04-18 10:24:29.992 信息:初始化 Version Verification, is Complete
+2023-04-18 10:24:29.992 信息:初始化 have full
+2023-04-18 10:24:29.992 信息:初始化 Open v candy
+2023-04-18 10:24:30.023 信息:初始化 Open v candy 01
+2023-04-18 10:24:30.023 信息:初始化 Open v candy 02
+2023-04-18 10:24:30.898 信息:初始化 Open v candy, sta：1
+2023-04-18 10:24:30.898 信息:初始化 Open v candy, Comlpete
+2023-04-18 10:24:30.914 信息:初始化 Create Log, Start
+2023-04-18 10:24:30.945 信息:初始化 Create Log, Init Queue and Config
+2023-04-18 10:24:31.429 信息:初始化 Create Log Panel Complete, c at 205686535
+2023-04-18 10:24:31.820 信息:初始化 have full
+2023-04-18 10:24:31.820 信息:初始化 Create Windows, Start
+2023-04-18 17:36:12.820 信息:初始化 Initializing Complete
+2023-04-18 17:36:12.836 信息:初始化 Load Config Complete, debug at 
+2023-04-18 17:36:12.836 信息:初始化 Version Verification, Start
+2023-04-18 17:36:14.243 信息:初始化 Version Verification, Complate has jpg: SyB842jw==
+2023-04-18 17:36:14.258 信息:初始化 Version Verification, jpg length: 5100
+2023-04-18 17:36:14.399 信息:初始化 Version Verification, Up Static files at 1595146037
+2023-04-18 17:36:14.399 信息:初始化 Version Verification, is Complete
+2023-04-18 17:36:14.399 信息:初始化 have full
+2023-04-18 17:36:14.399 信息:初始化 Open v candy
+2023-04-18 17:36:14.415 信息:初始化 Open v candy 01
+2023-04-18 17:36:14.431 信息:初始化 Open v candy 02
+2023-04-18 17:36:14.868 信息:初始化 Open v candy, sta：1
+2023-04-18 17:36:14.868 信息:初始化 Open v candy, Comlpete
+2023-04-18 17:36:14.868 信息:初始化 Create Log, Start
+2023-04-18 17:36:14.899 信息:初始化 Create Log, Init Queue and Config
+2023-04-18 17:36:15.087 信息:初始化 Create Log Panel Complete, c at 207062791
+2023-04-18 17:36:15.446 信息:初始化 have full
+2023-04-18 17:36:15.446 信息:初始化 Create Windows, Start

@@ -1,0 +1,37 @@
+{include file="public/header"}
+<div class="card-panel teal lighten-2">请先登录</div>
+<style>
+    .card {
+        position: relative;
+        width: 100%;
+    }
+
+    .box {
+        width: 400px;
+        max-width: 100%;
+        margin: auto auto;
+    }
+</style>
+<div class="card">
+    <div class="row box">
+        <form class="col s12" method="post">
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" name="username" class="validate">
+                    <label for="icon_prefix">账号</label>
+                </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">https</i>
+                    <input id="icon_telephone" type="text" name="pwd" value="" class="validate">
+                    <label for="icon_telephone">密码</label>
+                </div>
+                <div class="input-field col s12">
+                    <button class="waves-effect waves-light btn" type="submit">登录</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{include file="public/footer"}

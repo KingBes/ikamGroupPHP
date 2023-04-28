@@ -1,0 +1,96 @@
+{include file="public/header"}
+<div class="card-panel teal lighten-2">
+    <a class="waves-effect waves-light btn" href="javascript:history.back();"><i
+            class="material-icons left">keyboard_return</i>返回</a><a class="waves-effect waves-light btn"
+        href="javascript:;" onclick="updateFriend()"><i class="material-icons left">autorenew</i>刷新列表</a>
+</div>
+<table class="responsive-table">
+    <thead>
+        <tr>
+            <th data-field="friend_wxid">wxid</th>
+            <th data-field="wx_num">微信号</th>
+            <th data-field="nickname">昵称</th>
+            <th data-field="headimgurl">头像</th>
+            <th data-field="sex">性别</th>
+            <th data-field="is_host">主人</th>
+            <th data-field="note">备注</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {foreach $data as $k=>$v }
+        <tr>
+            <td>{$v.friend_wxid}</td>
+            <td>{$v.wx_num}</td>
+            <td>{$v.nickname}</td>
+            <td><img class="materialboxed" src="{$v.headimgurl}" width="25px" height="25px"></td>
+            <td>
+                {if $v.sex==0}
+                未知
+                {elseif $v.sex==1}
+                男
+                {else/}
+                女
+                {/if}
+            </td>
+            <td>
+                <label>
+                    <input onclick="host('{$v.friend_wxid}')" name="{$v.friend_wxid}" type="radio"
+                        {$v.is_host==1?"checked":""} value="1" />
+                    <span>是</span>
+                </label>
+                <label>
+                    <input onclick="host('{$v.friend_wxid}')" name="{$v.friend_wxid}" type="radio"
+                        {$v.is_host==0?"checked":""} value="0" />
+                    <span>否</span>
+                </label>
+            </td>
+            <td>{$v.note}</td>
+        </tr>
+        {/foreach}
+    </tbody>
+</table>
+{$data|raw}
+<script>
+    $(document).ready(function () {
+        $('.materialboxed').materialbox();
+    });
+
+    function host(wxid) {
+        let val = $(`input[name='${wxid}']:checked`).val()
+        $.post("", {
+            "friend_wxid": wxid,
+            "is_host": val
+        }, function (res) {
+            // Materialize.toast(res.msg,2000)
+            console.log(res)
+            M.toast({
+                html: res.msg,
+                displayLength: 2000
+            })
+        })
+
+    }
+
+    //更新好友
+    function updateFriend() {
+        let rob_wxid = "{$rob_wxid}";
+        $.post("{:route('admin.index.updateFriends')}", { rob_wxid: rob_wxid }, function (res) {
+            if (res.code == 1) {
+                M.toast({
+                    html: res.msg,
+                    completeCallback: function () {
+                        window.location.reload()
+                    },
+                    displayLength: 2000
+                })
+            } else {
+                M.toast({
+                    html: res.msg,
+                    displayLength: 2000
+                })
+            }
+        })
+    }
+</script>
+{include file="public/footer"}

@@ -1,0 +1,75 @@
+{include file="public/header"}
+<div class="card-panel teal lighten-2">{$group.nickname}--{$outs==0?"在线":"离线"}</div>
+<a class="waves-effect waves-light btn" href="?outs=0">在线成员</a>
+<a class="waves-effect waves-light btn" href="?outs=1">离线成员</a>
+<table class="responsive-table">
+    <thead>
+        <tr>
+            <th data-field="key">排序</th>
+            <th data-field="wx_num">微信号</th>
+            <th data-field="group_nickname">群昵称</th>
+            <th data-field="headimgurl">头像</th>
+            <th data-field="sex">性别</th>
+            <th data-field="diamond">钻石</th>
+            <th data-field="charm">魅力</th>
+            <th data-field="cash">银票</th>
+            <th data-field="is_admin">管理</th>
+            <th data-field="msg_num">发言次数</th>
+            <th data-field="out_group_time">最近活跃</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {foreach $data as $k=>$v }
+        <tr>
+            <td>{$v.id}</td>
+            <td>{$v.wx_num}</td>
+            <td>{$v.group_nickname}</td>
+            <td><img src="{$v.headimgurl}" alt="" width="25px" height="25px"></td>
+            <td>
+                {if $v.sex==0}
+                未知
+                {elseif $v.sex==1}
+                男
+                {else/}
+                女
+                {/if}
+            </td>
+            <td>{$v.diamond}克</td>
+            <td>{$v.charm}</td>
+            <td>{$v.cash}</td>
+            <td>
+                <label>
+                    <input onclick="edit({id:'{$v.id}',is_admin:'1'})" name="name_{$v.id}" type="radio"
+                        {$v.is_admin==1?"checked":""} value="1" />
+                    <span>是</span>
+                </label>
+                <label>
+                    <input onclick="edit({id:'{$v.id}',is_admin:'0'})" name="name_{$v.id}" type="radio"
+                        {$v.is_admin==0?"checked":""} value="0" />
+                    <span>否</span>
+                </label>
+            </td>
+            <td>{$v.msg_num}</td>
+            <td>{$v.out_group_time}</td>
+        </tr>
+        {/foreach}
+    </tbody>
+</table>
+{$data|raw}
+<script>
+    function edit(obj) {
+        $.post("/group/user/edit/{$group.id}", obj, function (res) {
+            M.toast({
+                html: res.msg,
+                displayLength: 2000,
+                completeCallback: function () {
+                    if (res.code != 1) {
+                        window.location.href = res.url
+                    }
+                },
+            })
+        })
+    }
+</script>
+{include file="public/footer"}

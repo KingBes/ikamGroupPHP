@@ -1,0 +1,115 @@
+2023-04-12 17:05:37.993 信息:初始化 Initializing Complete
+2023-04-12 17:05:37.993 信息:初始化 Load Config Complete, debug at 
+2023-04-12 17:05:37.993 信息:初始化 Version Verification, Start
+2023-04-12 17:05:41.135 信息:初始化 Version Verification, Complate has jpg: SyB842jw==
+2023-04-12 17:05:41.151 信息:初始化 Version Verification, jpg length: 5100
+2023-04-12 17:05:41.858 信息:Logs Version Update main, now: 5.3.6  new: 5.5.4
+2023-04-12 17:05:45.380 信息:初始化 Initializing Complete
+2023-04-12 17:05:45.396 信息:初始化 Load Config Complete, debug at 
+2023-04-12 17:05:45.396 信息:初始化 Version Verification, Start
+2023-04-12 17:05:46.756 信息:初始化 Version Verification, Complate has jpg: SyB842jw==
+2023-04-12 17:05:46.756 信息:初始化 Version Verification, jpg length: 5100
+2023-04-12 17:05:46.756 信息:初始化 Version Verification, Tab: \car\lollipop.dll isExist: 真 Old: 3b27f090c5291b7db6758c14f2450d0e Now: 7385440116a42ed9461e4fa2631c2ba3
+2023-04-12 17:05:47.099 信息:初始化 Version Verification, Tab: \car\coupler.dll isExist: 真 Old: 70d098d365c0c75b373701c140819d8b Now: 3486162ed7b9045277664b95d4effb45
+2023-04-12 17:05:47.584 信息:初始化 Version Verification, Tab: {Documents}SysSpeech\Prefetch\msc163.pec isExist: 真 Old: 9a319aa6a57c296ac5c894917ef20105 Now: c149c2fa8f4c00823ef7bc9886f4e0bb
+2023-04-12 17:05:47.725 信息:初始化 Version Verification, Up Static files at 1595146037
+2023-04-12 17:05:47.725 信息:初始化 Version Verification, is Complete
+2023-04-12 17:05:47.725 信息:初始化 have full
+2023-04-12 17:05:47.725 信息:初始化 Open v candy
+2023-04-12 17:05:47.741 信息:初始化 Open v candy 01
+2023-04-12 17:05:47.741 信息:初始化 Open v candy 02
+2023-04-12 17:05:48.255 信息:初始化 Open v candy, sta：-3
+2023-04-12 17:05:48.255 信息:初始化 Open v candy, staError
+2023-04-12 17:08:43.371 信息:初始化 Initializing Complete
+2023-04-12 17:08:43.383 信息:初始化 Load Config Complete, debug at 
+2023-04-12 17:08:43.383 信息:初始化 Version Verification, Start
+2023-04-12 17:08:44.664 信息:初始化 Version Verification, Complate has jpg: SyB842jw==
+2023-04-12 17:08:44.665 信息:初始化 Version Verification, jpg length: 5100
+2023-04-12 17:08:44.779 信息:初始化 Version Verification, Up Static files at 1595146037
+2023-04-12 17:08:44.779 信息:初始化 Version Verification, is Complete
+2023-04-12 17:08:44.779 信息:初始化 have full
+2023-04-12 17:08:44.779 信息:初始化 Open v candy
+2023-04-12 17:08:44.787 信息:初始化 Open v candy 01
+2023-04-12 17:08:44.790 信息:初始化 Open v candy 02
+2023-04-12 17:08:45.276 信息:初始化 Open v candy, sta：1
+2023-04-12 17:08:45.276 信息:初始化 Open v candy, Comlpete
+2023-04-12 17:08:45.278 信息:初始化 Create Log, Start
+2023-04-12 17:08:45.305 信息:初始化 Create Log, Init Queue and Config
+2023-04-12 17:08:45.448 信息:初始化 Create Log Panel Complete, c at 205686535
+2023-04-12 17:08:45.601 信息:初始化 have full
+2023-04-12 17:08:45.601 信息:初始化 Create Windows, Start
+2023-04-12 17:10:53.653 信息:初始化 Initializing Complete
+2023-04-12 17:10:53.669 信息:初始化 Load Config Complete, debug at 
+2023-04-12 17:10:53.669 信息:初始化 Version Verification, Start
+2023-04-12 17:10:54.997 信息:初始化 Version Verification, Complate has jpg: SyB842jw==
+2023-04-12 17:10:54.997 信息:初始化 Version Verification, jpg length: 5100
+2023-04-12 17:10:55.106 信息:初始化 Version Verification, Up Static files at 1595146037
+2023-04-12 17:10:55.106 信息:初始化 Version Verification, is Complete
+2023-04-12 17:10:55.106 信息:初始化 have full
+2023-04-12 17:10:55.106 信息:初始化 Open v candy
+2023-04-12 17:10:55.122 信息:初始化 Open v candy 01
+2023-04-12 17:10:55.122 信息:初始化 Open v candy 02
+2023-04-12 17:10:55.559 信息:初始化 Open v candy, sta：1
+2023-04-12 17:10:55.559 信息:初始化 Open v candy, Comlpete
+2023-04-12 17:10:55.559 信息:初始化 Create Log, Start
+2023-04-12 17:10:55.575 信息:初始化 Create Log, Init Queue and Config
+2023-04-12 17:10:55.653 信息:初始化 Create Log Panel Complete, c at 205686535
+2023-04-12 17:10:56.044 信息:初始化 have full
+2023-04-12 17:10:56.044 信息:初始化 Create Windows, Start
+2023-04-12 17:11:02.873 信息:应用心跳-结束，应用: iHttp.cat.dll  信号量: 4
+2023-04-12 17:11:33.247 信息:初始化 Initializing Complete
+2023-04-12 17:11:33.247 信息:初始化 Load Config Complete, debug at 
+2023-04-12 17:11:33.247 信息:初始化 Version Verification, Start
+2023-04-12 17:11:34.560 信息:初始化 Version Verification, Complate has jpg: SyB842jw==
+2023-04-12 17:11:34.560 信息:初始化 Version Verification, jpg length: 5100
+2023-04-12 17:11:34.685 信息:初始化 Version Verification, Up Static files at 1595146037
+2023-04-12 17:11:34.685 信息:初始化 Version Verification, is Complete
+2023-04-12 17:11:34.685 信息:初始化 have full
+2023-04-12 17:11:34.685 信息:初始化 Open v candy
+2023-04-12 17:11:34.685 信息:初始化 Open v candy 01
+2023-04-12 17:11:34.685 信息:初始化 Open v candy 02
+2023-04-12 17:11:35.232 信息:初始化 Open v candy, sta：1
+2023-04-12 17:11:35.232 信息:初始化 Open v candy, Comlpete
+2023-04-12 17:11:35.232 信息:初始化 Create Log, Start
+2023-04-12 17:11:35.248 信息:初始化 Create Log, Init Queue and Config
+2023-04-12 17:11:35.325 信息:初始化 Create Log Panel Complete, c at 204244743
+2023-04-12 17:11:35.764 信息:初始化 have full
+2023-04-12 17:11:35.764 信息:初始化 Create Windows, Start
+2023-04-12 17:11:39.389 信息:应用心跳-结束，应用: http.cat.dll  信号量: 4
+2023-04-12 17:13:26.438 信息:初始化 Initializing Complete
+2023-04-12 17:13:26.453 信息:初始化 Load Config Complete, debug at 
+2023-04-12 17:13:26.453 信息:初始化 Version Verification, Start
+2023-04-12 17:13:27.735 信息:初始化 Version Verification, Complate has jpg: SyB842jw==
+2023-04-12 17:13:27.735 信息:初始化 Version Verification, jpg length: 5100
+2023-04-12 17:13:27.845 信息:初始化 Version Verification, Up Static files at 1595146037
+2023-04-12 17:13:27.845 信息:初始化 Version Verification, is Complete
+2023-04-12 17:13:27.845 信息:初始化 have full
+2023-04-12 17:13:27.845 信息:初始化 Open v candy
+2023-04-12 17:13:27.860 信息:初始化 Open v candy 01
+2023-04-12 17:13:27.860 信息:初始化 Open v candy 02
+2023-04-12 17:13:28.298 信息:初始化 Open v candy, sta：1
+2023-04-12 17:13:28.298 信息:初始化 Open v candy, Comlpete
+2023-04-12 17:13:28.298 信息:初始化 Create Log, Start
+2023-04-12 17:13:28.313 信息:初始化 Create Log, Init Queue and Config
+2023-04-12 17:13:28.438 信息:初始化 Create Log Panel Complete, c at 205752071
+2023-04-12 17:13:28.829 信息:初始化 have full
+2023-04-12 17:13:28.829 信息:初始化 Create Windows, Start
+2023-04-12 17:13:34.064 信息:应用心跳-结束，应用: http.cat.dll  信号量: 4
+2023-04-12 17:13:50.638 信息:初始化 Initializing Complete
+2023-04-12 17:13:50.638 信息:初始化 Load Config Complete, debug at 
+2023-04-12 17:13:50.638 信息:初始化 Version Verification, Start
+2023-04-12 17:13:54.935 信息:初始化 Version Verification, Complate has jpg: SyB842jw==
+2023-04-12 17:13:54.935 信息:初始化 Version Verification, jpg length: 5100
+2023-04-12 17:13:55.044 信息:初始化 Version Verification, Up Static files at 1595146037
+2023-04-12 17:13:55.044 信息:初始化 Version Verification, is Complete
+2023-04-12 17:13:55.044 信息:初始化 have full
+2023-04-12 17:13:55.044 信息:初始化 Open v candy
+2023-04-12 17:13:55.044 信息:初始化 Open v candy 01
+2023-04-12 17:13:55.060 信息:初始化 Open v candy 02
+2023-04-12 17:13:55.466 信息:初始化 Open v candy, sta：1
+2023-04-12 17:13:55.466 信息:初始化 Open v candy, Comlpete
+2023-04-12 17:13:55.466 信息:初始化 Create Log, Start
+2023-04-12 17:13:55.497 信息:初始化 Create Log, Init Queue and Config
+2023-04-12 17:13:55.591 信息:初始化 Create Log Panel Complete, c at 204441351
+2023-04-12 17:13:55.966 信息:初始化 have full
+2023-04-12 17:13:55.966 信息:初始化 Create Windows, Start
