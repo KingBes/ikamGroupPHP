@@ -57,7 +57,7 @@ $pwd = password_hash("这里填你的新密码", PASSWORD_DEFAULT);
 
 ### 接口数据
 ```php
-sendEvent(["event" => "GetLoggedAccountList"]); //获取机器人
+sendMsg(["event" => "GetLoggedAccountList"]); //获取机器人
 /* Array
 (
     [event] => GetLoggedAccountList
@@ -81,7 +81,7 @@ sendEvent(["event" => "GetLoggedAccountList"]); //获取机器人
                 )
         )
 ) */
-sendEvent(["event" => "GetGroupList", "robot_wxid" => "", "msg" => "1"]); //获取机器人群列
+sendMsg(["event" => "GetGroupList", "robot_wxid" => "", "msg" => "1"]); //获取机器人群列
 /* Array
 (
     [event] => GetGroupList
@@ -110,7 +110,7 @@ sendEvent(["event" => "GetGroupList", "robot_wxid" => "", "msg" => "1"]); //获�
                 )
         )
 ) */
-sendEvent([
+sendMsg([
     "event" => "GetGroupMemberList",
     "robot_wxid" => "wxid_xxx",
     "group_wxid" => "xxx@chatroom", "msg" => "1"
@@ -141,7 +141,7 @@ sendEvent([
                 )
         )
 ) */
-sendEvent([
+sendMsg([
     "event" => "GetGroupMemberInfo",
     "robot_wxid" => "wxid_xxx", //机器人
     "group_wxid" => "xxx@chatroom", //群号
@@ -172,7 +172,7 @@ sendEvent([
         )
 
 ) */
-sendEvent([
+sendMsg([
     "event" => "GetFriendList",
     "robot_wxid" => "wxid_xxxx", //机器人
     "msg" => "1,0"
