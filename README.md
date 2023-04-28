@@ -10,8 +10,14 @@
 3.  mysql
 4.  系统：作者用的是win系统
 5.  webman框架
+6.  composer
 
 #### 使用说明
+
+0. 更新系统：命令行到->phpGroupTube文件夹
+```
+composer update
+```
 
 1. 设置数据库：phpGroupTube文件夹->config文件夹->thinkorm.php文件;数据库文件->phpGroupTube文件夹->keaimao.sql文件
 ```php
@@ -50,6 +56,8 @@ $pwd = password_hash("这里填你的新密码", PASSWORD_DEFAULT);
 7. 进入后台:点击群组->设置群开关(开启群聊模式);设置群密码;-----如果看不到数据->点击刷新列表
 
 8. (可选)进入后台:点击好友->设置主人(机器人主人在群内发送：开鸡)即可设置开启群聊
+
+![image](01.png)
 
 9. 已开源剩下的自己看源码
 
